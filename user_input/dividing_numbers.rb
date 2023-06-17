@@ -7,12 +7,12 @@ denominator = 0
 
 loop do
   puts '>> Please enter the numerator:'
-  numerator = gets.chomp.to_i
+  numerator = gets.chomp
   
   puts '>> Please enter the denominator:'
-  denominator = gets.chomp.to_i
+  denominator = gets.chomp
   
-  if denominator == 0
+  if denominator == '0'
     puts ">> Invalid input. A denominator of 0 is not allowed."
     next
   end
@@ -22,5 +22,5 @@ loop do
   puts ">> Invalid input. Only integers are allowed."
 end
 
-answer = numerator / denominator
+answer = numerator.to_i / denominator.to_i
 puts ">> #{numerator} / #{denominator} is #{answer}"
