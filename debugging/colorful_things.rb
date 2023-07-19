@@ -6,7 +6,7 @@ things.shuffle!
 
 i = 0
 loop do
-  break if i > colors.length
+  break if i >= things.length || i >= colors.length
 
   if i == 0
     puts 'I have a ' + colors[i] + ' ' + things[i] + '.'
